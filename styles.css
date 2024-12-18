@@ -1,0 +1,85 @@
+/* CSS жалпы стилдери */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0E6F0;
+    color: #800020;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #A52A2A;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #F5E0E0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #800020;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Кар буртукчалары үчүн стили */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 24px;
+    z-index: 9999;
+    user-select: none;
+    pointer-events: none;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
